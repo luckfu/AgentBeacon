@@ -1,0 +1,20 @@
+.build/
+.swiftpm/
+DerivedData/
+*.xcodeproj/
+!PingIslandLite.xcodeproj
+*.xcworkspace
+*.dSYM
+.DS_Store
+
+# Sparkle local secrets
+.sparkle-keys/
+LocalSecrets.xcconfig
+
+# Build artifacts
+build/
+releases/
+*.app
+*.dmg
+*.zip
+default.profraw
