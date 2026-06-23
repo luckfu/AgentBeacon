@@ -12,11 +12,13 @@ RESOURCES_DIR="$CONTENTS_DIR/Resources"
 
 cd "$ROOT_DIR"
 swift build -c release
+swift build -c release --package-path Bridge --product PingIslandBridge
 
 rm -rf "$APP_DIR"
 mkdir -p "$MACOS_DIR" "$RESOURCES_DIR"
 
 cp ".build/release/$PRODUCT_NAME" "$MACOS_DIR/$PRODUCT_NAME"
+cp "Bridge/.build/release/PingIslandBridge" "$MACOS_DIR/PingIslandBridge"
 if [ -d ".build/release/${PRODUCT_NAME}_${PRODUCT_NAME}.bundle" ]; then
   cp -R ".build/release/${PRODUCT_NAME}_${PRODUCT_NAME}.bundle" "$RESOURCES_DIR/"
 fi
