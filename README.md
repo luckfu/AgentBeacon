@@ -4,6 +4,14 @@
 
 AgentBeacon 是 [PingIsland](https://github.com/) 的独立分叉版本，目标是在 macOS 12 (Monterey) 及以上系统上提供 AI 编码 Agent 的统一通知与跳转能力。
 
+## Screenshots
+
+Screenshots live under `docs/images/`. Recommended captures:
+
+- `menu-activity.png` — menu bar activity list with session badges and Codex usage.
+- `settings-mascots.png` — mascot selector.
+- `session-detail.png` — session detail window.
+
 ## 与原版的差异
 
 | 维度 | 原版 PingIsland | AgentBeacon |
