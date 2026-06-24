@@ -6,11 +6,9 @@ AgentBeacon 是 [PingIsland](https://github.com/) 的独立分叉版本，目标
 
 ## Screenshots
 
-Screenshots live under `docs/images/`. Recommended captures:
-
-- `menu-activity.png` — menu bar activity list with session badges and Codex usage.
-- `settings-mascots.png` — mascot selector.
-- `session-detail.png` — session detail window.
+| Menu activity | Mascot settings | Session detail |
+|---|---|---|
+| ![AgentBeacon menu activity](docs/images/menu-activity.png) | ![AgentBeacon mascot settings](docs/images/settings-mascots.png) | ![AgentBeacon session detail](docs/images/session-detail.png) |
 
 ## 与原版的差异
 
