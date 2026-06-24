@@ -7,8 +7,7 @@ import IslandShared
 /// 这是用户在 macOS 12 上唯一能看见 AgentBeacon 的入口——
 /// 屏幕右上角菜单栏里那个小图标。点它会弹出菜单。
 ///
-/// 阶段 1（当前）：图标 + 计数 + 最近事件列表。
-/// 阶段 2 会换成 NSPopover + 会话列表 + 吉祥物动画。
+/// 当前实现：动态图标 + 会话计数 + 最近活动列表 + 吉祥物状态展示。
 ///
 /// 之所以用 `NSStatusItem` 而不是 SwiftUI 的 `MenuBarExtra`：
 /// `MenuBarExtra` 是 macOS 13+ API，本项目目标 macOS 12，必须使用 AppKit 老 API。

@@ -17,7 +17,7 @@ AgentBeacon 是 [PingIsland](https://github.com/) 的独立分叉版本，目标
 | 最低 macOS | 14 (Sonoma) | **12 (Monterey)** |
 | UI 形态 | 灵动岛 / 悬浮胶囊 | 菜单栏图标 + 弹出面板 |
 | 吉祥物 | 完整动画 | **完整动画**（保留） |
-| 支持 Agent | 14 家 | **14 家**（一致） |
+| 支持 Agent | 14 家 | **17 个 hook profile**（覆盖原版主要本地 hook 集成，并拆分 IDE/CLI 变体） |
 | 通知形态 | 自定义岛内提示 | macOS 原生通知中心 |
 | 终端跳转 | ✅ | ✅ |
 | SSH 远程桥接 | ✅ | 计划中 |
@@ -27,8 +27,8 @@ AgentBeacon 是 [PingIsland](https://github.com/) 的独立分叉版本，目标
 - [x] 阶段 1：项目骨架与菜单栏图标
 - [x] 阶段 1：HookSocketServer 移植
 - [x] 阶段 1：原生通知接入
-- [ ] 阶段 2：吉祥物完整档移植
-- [ ] 阶段 3：14 家 Agent hook 安装器
+- [x] 阶段 2：吉祥物完整档移植
+- [x] 阶段 3：17 个 Agent hook profile 安装器
 - [x] 阶段 4：设置面板 + 终端跳转 + 本地 .app 打包脚手架
 - [ ] 阶段 4：Sparkle 更新与签名发布
 

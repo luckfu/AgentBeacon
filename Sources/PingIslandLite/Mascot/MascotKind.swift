@@ -1,7 +1,7 @@
 import Foundation
 import IslandShared
 
-/// 吉祥物种类（14 家 Agent + Trae 别名 = 14 个 GIF 资源）。
+/// 吉祥物种类（13 家独立 Agent + Trae 复用 Claude = 14 个 GIF 资源）。
 ///
 /// 这是 PingIsland Lite 的简化版枚举，去掉了原版 `MascotView.MascotKind` 对
 /// `SessionState` / `SessionClientInfo` / `MascotStatus.warning` 等运行时状态的耦合。
@@ -68,9 +68,8 @@ public enum MascotKind: String, CaseIterable, Identifiable, Sendable {
     }
 
     /// 从 BridgeEnvelope 的 AgentProvider 推导默认吉祥物。
-    /// 原版有 `MascotClient(clientInfo:provider:)` 那套基于 brand/profileID 的精细路由，
-    /// Lite 版当前阶段只接 5 家 provider，先用最简映射；
-    /// 后续阶段 3 接入 14 家 hook 安装器后再扩展 client-kind 路由。
+    /// Bridge 协议层目前只有少量顶层 provider；更细的 IDE/CLI profile 通过 hook 参数
+    /// 进入会话元数据，菜单行展示时再按 session 信息补充品牌标签。
     public init(provider: AgentProvider) {
         switch provider {
         case .claude:  self = .claude
@@ -81,6 +80,6 @@ public enum MascotKind: String, CaseIterable, Identifiable, Sendable {
         }
     }
 
-    /// 阶段 1 的"默认门面"：还没收到任何 hook 事件时，菜单里露脸的那只。
+    /// 默认门面：还没收到任何 hook 事件时，菜单里露脸的那只。
     public static let defaultIdle: MascotKind = .claude
 }

@@ -8,7 +8,7 @@ import Foundation
 /// 没法直接搬。但是 GIF 文件可以——`NSImage(contentsOf:)` 解码 GIF 后丢给 NSImageView，
 /// 它会自动按 GIF 内嵌的帧延迟循环播放（依赖 `NSBitmapImageRep` 的能力，macOS 10.6+ 就有）。
 ///
-/// 阶段 2 第二刀（当前）：在基础 GIF 上叠"心情"信号——
+/// 在基础 GIF 上叠"心情"信号——
 /// - `working`：右下角 `NSProgressIndicator` 转圈圈
 /// - `warning`：吉祥物外圈红色脉冲光晕（`CALayer.shadowOpacity` + `CABasicAnimation`）
 /// - `idle`：纯 GIF
