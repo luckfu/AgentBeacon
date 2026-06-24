@@ -2,7 +2,7 @@
 
 > macOS 12+ 兼容版的 PingIsland，面向无法升级到 macOS 14 的老 Mac 用户。
 
-AgentBeacon 是 [PingIsland](https://github.com/) 的独立分叉版本，目标是在 macOS 12 (Monterey) 及以上系统上提供 AI 编码 Agent 的统一通知与跳转能力。
+AgentBeacon 是 [PingIsland](https://github.com/erha19/ping-island) 的丐版简化分支，目标是在 macOS 12 (Monterey) 及以上系统上提供 AI 编码 Agent 的统一通知与跳转能力。当你的编码 Agent 需要你处理审批、输入或查看结果时，它会展开成一个紧凑的会话界面。它能接 Claude 风格 hooks、Codex hooks、Gemini CLI hooks、Hermes Agent plugin hooks、Pi Agent extension hooks、Qwen Code hooks、Kimi CLI hooks、OpenClaw internal hooks + session transcripts、Codex app-server、OpenCode 插件，以及兼容 IDE 的集成层，所以你不用一直盯着终端标签页，也能看到会话状态。
 
 ## Screenshots
 
@@ -30,7 +30,7 @@ AgentBeacon 是 [PingIsland](https://github.com/) 的独立分叉版本，目标
 - [x] 阶段 2：吉祥物完整档移植
 - [x] 阶段 3：17 个 Agent hook profile 安装器
 - [x] 阶段 4：设置面板 + 终端跳转 + 本地 .app 打包脚手架
-- [ ] 阶段 4：Sparkle 更新与签名发布
+
 
 ## 本地运行
 
